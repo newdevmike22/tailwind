@@ -1,4 +1,4 @@
-import Card from "./components/Card";
+import NewArrivalSection from "./components/NewArrivals";
 import Nav from "./components/Nav";
 import Shoe from "./components/Shoe";
 import { SHOE_LIST } from "./constant";
@@ -8,7 +8,7 @@ const App = () => {
     <div className="animate-fadeIn p-10 xl:px-24">
       <Nav />
       <Shoe />
-      <Card item={SHOE_LIST[0]} />
+      <NewArrivalSection items={SHOE_LIST}/>
     </div>
   )
 }
