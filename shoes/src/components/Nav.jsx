@@ -40,7 +40,7 @@ const Nav = () => {
             </div>
 
             {/* cart button */}
-            <div className="fixed left-4 bottom-4 lg:static lg:mr-8">
+            <div className="btn-press-anima fixed left-4 bottom-4 lg:static lg:mr-8">
                 <div className="flex-center h-12 w-12 rounded-full bg-white shadow-md cursor-pointer">
                     <TbShoppingBag />
                 </div>
