@@ -1,6 +1,10 @@
+import Nav from "./components/Nav";
+
 const App = () => {
   return (
-    <div className="text-red-500 text-4xl">Shoes App</div>
+    <div className="p-10 xl:px-24">
+      <Nav/>
+    </div>
   )
 }
 
