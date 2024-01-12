@@ -31,7 +31,7 @@ const Nav = () => {
                     {ROUTES.map((route, i) => {
                         return (
                             <li 
-                                className={`lg:hover:bg-transparent lg:hover:text-blue-900 px-3 py-2 cursor-pointer rounded ${i === 0 ? "bg-blue-800 text-white lg:bg-transparent lg:text-blue-800" : "hover:bg-gray-200"} ${(i == 3 || i == 4) && "lg:text-white"}`} 
+                                className={`lg:hover:bg-transparent lg:hover:text-blue-600 px-3 py-2 cursor-pointer rounded ${i === 0 ? "bg-blue-800 text-white lg:bg-transparent lg:text-blue-800" : "hover:bg-gray-200"} ${(i == 3 || i == 4) && "lg:text-white"}`} 
                                 key={route}>{route}
                             </li>    
                         )
