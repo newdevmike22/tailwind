@@ -1,4 +1,6 @@
 import Nike1 from "../assets/n1-min.png"
+import { QTY, SIZES } from "../constant";
+import Select from "./Select";
 
 const Shoe = () => {
     return (
@@ -14,7 +16,12 @@ const Shoe = () => {
                 {/* shoe text details */}
                 <div className="text-5xl font-black md:text-9xl">Nike Air Max 270</div>
                 <div className="font-medium md:text-xl">{"The Nike Max 270 is a lifestyle shoe that's sure to turn heads with its vibrant color gradient."}</div>
-                <div className="text-3xl font-extrabold md:text-6xl">$100</div>
+
+                <div className="flex space-x-6">
+                    <div className="text-3xl font-extrabold md:text-6xl">$100</div>
+                    <Select title={"QTY"} options={QTY} />
+                    <Select title={"SIZE"} options={SIZES} />
+                </div>
 
                 {/* shoe buttons and links */}
                 <div className="space-x-10">
