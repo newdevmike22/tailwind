@@ -35,7 +35,7 @@ const App = () => {
   };
 
   return (
-    <div className="animate-fadeIn p-10 xl:px-24">
+    <div className="animate-fadeIn p-10 xl:px-24 dark:bg-night">
       <Nav onClickShoppingBtn ={() => setIsSidebarOpen(true)} />
       <Shoe />
       <NewArrivalSection items={SHOE_LIST}/>
