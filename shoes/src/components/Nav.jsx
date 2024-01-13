@@ -11,7 +11,7 @@ const ROUTES = [
     "Contact",
 ];
 
-const Nav = () => {
+const Nav = ({ onClickShoppingBtn }) => {
     const [isMobileMenuShown, setIsMobileMenuShown] = useState(false);
 
     return (
@@ -40,7 +40,7 @@ const Nav = () => {
             </div>
 
             {/* cart button */}
-            <div className="btn-press-anima fixed left-4 bottom-4 lg:static lg:mr-8">
+            <div onClick={onClickShoppingBtn} className="btn-press-anima fixed left-4 bottom-4 lg:static lg:mr-8">
                 <div className="flex-center h-12 w-12 rounded-full bg-white shadow-md cursor-pointer">
                     <TbShoppingBag />
                 </div>
